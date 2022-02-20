@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vegetables</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <style media="screen">
+      button{
+        background-color: transparent;
+        height: 10px;
+        width: 10px;
+      }
+    </style>
+    <script type="text/javascript">
+      function searchTxt() {
+        var vegetables =  new Array("Corn","Mushroom","Broccoli","Cucumber","Pepper","Tomato","Carrot","Pumpkin","Cabbage","Eggplant", "Onion","Garlic", "Leek", "Carrot", "Radish", "Turnip", "Potato", "Tomato");
+        val = document.forms[0].search.value;
+        if(val!=""){
+        if (vegetables.includes(val))
+        {
+          val = "";
+        }
+        else {
+          alert("Please select appropriate category");
+        }}
+      }
+    </script>
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> groco </a>
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <form class="" action="index.html" method="post">
+          <input type="search" placeholder="Search.." name="search" onblur="searchTxt()">
+          <button type="button" name="button" class="fas fa-search"></button>
+        </form>
+      </nav>
+    </header>
+    <br><br><br><br><br><br>
+    <section class="categories" id="categories">
+      <div class="box-container">
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaSmudx7dFFVmShNIVllWgRISv74ylC6ON_dLrnrw41cEQVOitjxo7UBbgp9Cjw1jzOy8&usqp=CAU" alt="">
+            <h3>Onion</h3>
+            <p> &#8377; 30/kg </p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQODYgFSd91_53SWj5hWQZjZjeiMJH1eKPoBDQhqU8QXie3NkAzUEltqfs2qOBeoLnlcAQ&usqp=CAU" alt="">
+            <h3>Garlic</h3>
+            <p>&#8377; 80/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://cdn.shopify.com/s/files/1/0065/0005/7186/products/OnionLeeks_7cd9402d-76c3-4719-b60e-5bb4b3f74365_503x503.jpg?v=1610702599" alt="">
+            <h3>Leek</h3>
+            <p>&#8377; 60/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="http://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-carrot-red-long-desi-vegetable-seeds-16968688566412.jpg?v=1634203428" alt="">
+            <h3>Carrot</h3>
+            <p>&#8377; 50/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://m.media-amazon.com/images/I/51VwLKoBM5L.jpg" alt="">
+            <h3>Radish</h3>
+            <p>&#8377; 30/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://cdn-prod.medicalnewstoday.com/content/images/articles/284/284815/a-bunch-of-turnips-on-a-table.jpg" alt="">
+            <h3>Turnip</h3>
+            <p>&#8377; 40/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cG90YXRvfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="">
+            <h3>Potato</h3>
+            <p>&#8377; 20/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzxIRe_ScYTsKxoRnyNKUDB5tb_1btMf9Z5Q&usqp=CAU" alt="">
+            <h3>Tomato</h3>
+            <p>&#8377; 20/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

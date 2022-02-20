@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fruits</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <style media="screen">
+      button{
+        background-color: transparent;
+        height: 10px;
+        width: 10px;
+      }
+    </style>
+    <script type="text/javascript">
+      function searchTxt() {
+        var fruits =  new Array("Apple","Apricots","Avocado","Banana","Blackberries","Blackcurrant","Blueberries","Carambola","Cherries","Custard-Apple","Figs","Grapes","Guava","Jackfruit","Kiwifruit","Lemon","Lychee","Mango","Orange","Papaya","Peaches","Pear","Pineapple","Pomegranate","Watermelon");
+        val = document.forms[0].search.value
+        if(val!=""){
+        if (fruits.includes(val))
+        {
+
+        }
+        else {
+          alert("Please select appropriate category");
+        }}
+      }
+    </script>
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> groco </a>
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <form class="" action="index.html" method="post">
+          <input type="search" placeholder="Search.." name="search" onblur="searchTxt()">
+          <button type="button" name="button" class="fas fa-search"></button>
+        </form>
+      </nav>
+    </header>
+    <br><br><br><br><br><br>
+    <section class="categories" id="categories">
+      <div class="box-container">
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80" alt="">
+            <h3>Apple</h3>
+            <p> &#8377; 100/kg </p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://images.newscientist.com/wp-content/uploads/2019/01/31134057/gettyimages-86304874.jpg" alt="">
+            <h3>Banana</h3>
+            <p>&#8377; 40/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjJ3EyAMpFpGW_EsLDGFhWM12yh3-3RV_IBA&usqp=CAU" alt="">
+            <h3>Mango</h3>
+            <p>&#8377; 120/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://static.independent.co.uk/2021/01/30/12/iStock-1131608539or.jpg?width=982&height=726&auto=webp&quality=75" alt="">
+            <h3>Orange</h3>
+            <p>&#8377; 80/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://cdn.shopify.com/s/files/1/0104/1059/0266/products/Organic_Papaya.jpg?v=1612511248" alt="">
+            <h3>Papaya</h3>
+            <p>&#8377; 60/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://snaped.fns.usda.gov/sites/default/files/seasonal-produce/2018-05/watermelon.jpg" alt="">
+            <h3>Watermelon</h3>
+            <p>&#8377; 50</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://static.libertyprim.com/files/familles/kiwi-large.jpg?1569271790" alt="">
+            <h3>Kiwi</h3>
+            <p>&#8377; 120/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREujR7CIciKw9WDCHPejr28Z3_uI8xoYZByw&usqp=CAU" alt="">
+            <h3>Grapes</h3>
+            <p>&#8377; 60/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

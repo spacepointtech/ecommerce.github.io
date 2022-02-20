@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Frozen Goods</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <style media="screen">
+      button{
+        background-color: transparent;
+        height: 10px;
+        width: 10px;
+      }
+    </style>
+    <script type="text/javascript">
+      function searchTxt() {
+        var bitem =  new Array("Fries","Chapati","Paratha","Spring Roll","Pea","Corn","Momos","Icecream","Shrimp","Cheese","Chocolate");
+        val = document.forms[0].search.value;
+        if (bitem.includes(val))
+        {
+
+        }
+        else {
+          alert("Please select appropriate category");
+        }
+      }
+    </script>
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> groco </a>
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <form class="" action="index.html" method="post">
+          <input type="search" placeholder="Search.." name="search" onblur="searchTxt()">
+          <button type="button" name="button" class="fas fa-search"></button>
+        </form>
+      </nav>
+    </header>
+    <br><br><br><br><br><br>
+    <section class="categories" id="categories">
+      <div class="box-container">
+        <div class="box">
+            <img src="https://image.shutterstock.com/image-photo/shah-alam-malaysia-march-27-260nw-1351774121.jpg" alt="">
+            <h3>Chocolate</h3>
+            <p> &#8377; 20 rupees 1pc </p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/40124275_2-vadilal-quick-treat-frozen-food-roti-chapati.jpg" alt="">
+            <h3>Chapati</h3>
+            <p>&#8377; 25 rupees packet</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5kigp6ydL04bPwvj_Felkcim0KAZkQB9YFqY2BGRgdKxBV6mA0pzbAwCa1BlCncyzhjs&usqp=CAU" alt="">
+            <h3>Paratha</h3>
+            <p>&#8377; 30 rupees </p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://5.imimg.com/data5/LV/SP/XJ/SELLER-40398608/frozen-spring-roll-pastry-500x500.jpg" alt="">
+            <h3>Spring Roll</h3>
+            <p>&#8377; 60 rs packet</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://www.bigbasket.com/media/uploads/p/xxl/40163718_3-fresho-frozen-green-peas.jpg" alt="">
+            <h3>Frozen Peas</h3>
+            <p>&#8377; 100 rupees </p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfY9LM9I6z8fEyGW1t7nWY8FvuTPX5criPP5L0_RDGvbfP9Bt8I9Jb0fT0LvanXC4yf0&usqp=CAU" alt="">
+            <h3>Corn</h3>
+            <p>&#8377; 300 rupees 1kg</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz4XPer2jNJb1mc1b-cza24o-RWEET6JM_I9YCbGGtBa8H-NBJXCutZ1kA2g2Av2TEGW8&usqp=CAU" alt="">
+            <h3>Fries</h3>
+            <p>&#8377; 300 rupees 1kg</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://image.shutterstock.com/image-photo/kolkata-west-bengal-india-august-260nw-1817625965.jpg" alt="">
+            <h3>Icecream</h3>
+            <p>&#8377; 300 rupees 1kg</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Snacks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <style media="screen">
+      button{
+        background-color: transparent;
+        height: 10px;
+        width: 10px;
+      }
+    </style>
+    <script type="text/javascript">
+      function searchTxt() {
+        var snack =  new Array("Potato Chips.","Nachos chips ","Tortillas chips ","Banana Chips ","Namkeen","Khakhra","Popcorn","Papad","Chikki","Chakli");
+        val = document.forms[0].search.value;
+        if(val!="")
+        {
+        if (snack.includes(val))
+        {
+          val=""
+        }
+        else {
+          alert("Please select appropriate category");
+        }}
+      }
+    </script>
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> groco </a>
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <form class="" action="index.html" method="post">
+          <input type="search" placeholder="Search.." name="search" onblur="searchTxt()">
+          <button type="button" name="button" class="fas fa-search"></button>
+        </form>
+      </nav>
+    </header>
+    <br><br><br><br><br><br>
+    <section class="categories" id="categories">
+      <div class="box-container">
+        <div class="box">
+            <img src="https://m.media-amazon.com/images/I/91TKOKJe2zL._SL1500_.jpg" alt="">
+            <h3>Potato Chips</h3>
+            <p> &#8377; 20 rupees packet </p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_PohUEDu5siXI2Ohk_psco7tpJw0I3llvpg&usqp=CAU" alt="">
+            <h3>Nachos chips</h3>
+            <p>&#8377; 25 rupees packet</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/originals/06/96/0c/06960c24b300af7bf737cca363d78bc1.jpg" alt="">
+            <h3>Tortillas chips</h3>
+            <p>&#8377; 30 rupees packet</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnqRj8UivCHL21wy-e7LleLYExeLJGJ5Hn5Q&usqp=CAU" alt="">
+            <h3>Banana Chips</h3>
+            <p>&#8377; 77 rupees packet</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://images.squarespace-cdn.com/content/v1/570b9bd42fe131a6e20717c2/1525244323426-4HJ38ELVR2HK9E6LJF4D/Kurkure_Packaging_Elephant+Design+6.jpg" alt="">
+            <h3>Namkeen</h3>
+            <p>&#8377; 50 rupees 1kg</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://cdn.dribbble.com/users/1357140/screenshots/6272627/721fc670857515.5bb1ef7c54f0a_4x.png?compress=1&resize=400x300" alt="">
+            <h3>Khakhra</h3>
+            <p>&#8377; 30 rupees 12 pcs</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://chhedaspecialities.com/sites/default/files/BhajniChakli%20copy.png" alt="">
+            <h3>Chakli</h3>
+            <p>&#8377; 30 rupees 12 pcs</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://marvel-b1-cdn.bc0a.com/f00000000224929/www.visipak.com/cmss_files/imagelibrary/popcorn-packaging-featured.jpg" alt="">
+            <h3>Popcorn</h3>
+            <p>&#8377; 30 rupees 12 pcs</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

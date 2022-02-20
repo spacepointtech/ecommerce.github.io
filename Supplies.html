@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Supplies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <style media="screen">
+      button{
+        background-color: transparent;
+        height: 10px;
+        width: 10px;
+      }
+    </style>
+    <script type="text/javascript">
+      function searchTxt() {
+       var Supplies=  new Array("Wheat","Oats","Corn","Rice","Sugar","Salt","Poha","Rava","Dal","Masala", "Milk","Curd", "Panner");
+        val = document.forms[0].search.value
+        if (Supplies.includes(val))
+        {
+
+        }
+        else {
+          alert("Please select appropriate category");
+        }
+      }
+    </script>
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> groco </a>
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <form class="" action="index.html" method="post">
+          <input type="search" placeholder="Search.." name="search" onblur="searchTxt()">
+          <button type="button" name="button" class="fas fa-search"></button>
+        </form>
+      </nav>
+    </header>
+    <br><br><br><br><br><br>
+    <section class="categories" id="categories">
+      <div class="box-container">
+        <div class="box">
+            <img src="https://www.printweek.in/Utils/ImageResizer.ashx?n=http://img.haymarketsac.in/printweek/a4ffa9f9-b801-4fd8-851d-94e121175bc4.jpg&h=490&w=735" alt="">
+            <h3>Wheat</h3>
+            <p> &#8377; 50/kg </p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://m.media-amazon.com/images/I/51NQNLkK-ZL.jpg" alt="">
+            <h3>Oats</h3>
+            <p>&#8377; 80/kg</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4LrYpY9aiXvcFK1GKR_ikD_cmf0Skkc-6cA&usqp=CAU" alt="">
+            <h3>Corn</h3>
+            <p>&#8377; 60/kg</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLHIMqY9OK9-KnxOjv5gIb2nedUXLTRecSI8d7nGtnsYIlu5d2vGxz8RuEFbrS7m12NmY&usqp=CAU" alt="">
+            <h3>Rice</h3>
+            <p>&#8377; 50/kg</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://2.wlimg.com/product_images/bc-full/2020/4/3267520/sugar-packaging-bags-1587990399-5395143.jpeg" alt="">
+            <h3>Sugar</h3>
+            <p>&#8377; 30/kg</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://www.tatasalt.com/public/front_assets/images/tatasalt_og.jpg" alt="">
+            <h3>Salt</h3>
+            <p>&#8377; 40/kg</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://m.media-amazon.com/images/I/51xTxNjuLlS.jpg" alt="">
+            <h3>Poha</h3>
+            <p>&#8377; 20/kg</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbo1kfjZF6ydNQ5YIEfs3fGOF4tGesfQbgFtRTFfWb2BwqwY5_yU6sD5YwwEFvvNXkJCw&usqp=CAU" alt="">
+            <h3>Rava</h3>
+            <p>&#8377; 20/kg</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

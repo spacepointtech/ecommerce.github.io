@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grocery Store</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  </head>
+  <body>
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> E_COM GROCERY </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#categories">categories</a>
+            <div class="dropdown">
+            <a href="#" class="dropbtn">All Products &nbsp;<i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+              <br><br><br>
+              <div class="row">
+                <div class="column">
+                  <h2>Snacks</h2>
+                  <a href="#">Potato Chips</a>
+                  <a href="#">Nachos Chips</a>
+                  <a href="#">Tortillas Chips</a>
+                  <a href="#">Banana Chips</a>
+                  <a href="#">Namkeen</a>
+                  <a href="#">Khakhra</a>
+                  <a href="#">Popcorn</a>
+                  <a href="#">Papad</a>
+                  <a href="#">Chikki</a>
+                  <a href="#">Chakli</a>
+                </div>
+                <div class="column">
+                  <h2>Fresh Fruits</h2>
+                  <a href="#">Apple</a>
+                  <a href="#">Apricots</a>
+                  <a href="#">Avocado</a>
+                  <a href="#">Banana</a>
+                  <a href="#">Blackberries</a>
+                  <a href="#">Blackcurrant</a>
+                  <a href="#">Blueberries</a>
+                  <a href="#">Carambola</a>
+                  <a href="#">Cherries</a>
+                  <a href="#">Custard-Apple</a>
+                  <a href="#">Figs</a>
+                  <a href="#">Grapes</a>
+                </div>
+
+                <div class="column">
+                  <h2>Vegetables</h2>
+                  <a href="#">Corn</a>
+                  <a href="#">Mushroom</a>
+                  <a href="#">Brocolli</a>
+                  <a href="#">Cumcumber</a>
+                  <a href="#">Pepper</a>
+                  <a href="#">Tomato</a>
+                  <a href="#">Carrot</a>
+                  <a href="#">Pumpkin</a>
+                  <a href="#">Cabbage</a>
+                  <a href="#">Eggplant</a>
+                  <a href="#">Onion</a>
+                  <a href="#">Tomato</a>
+                </div>
+
+                <div class="column">
+                  <h2>Canned Items</h2>
+                  <a href="#">Beans</a>
+                  <a href="#">Meat</a>
+                  <a href="#">Fish</a>
+                  <a href="#">Diced Tomatoes</a>
+                  <a href="#">Baby Corn</a>
+                  <a href="#">Olives</a>
+                  <a href="#">Coconut Milk</a>
+                  <a href="#">Oranges</a>
+                  <a href="#">Pumpkin</a>
+                  <a href="#">Jackfruit</a>
+                </div>
+                <div class="column">
+                  <h2>Perishables</h2>
+                  <a href="#">Meat</a>
+                  <a href="#">Poultry</a>
+                  <a href="#">Fish</a>
+                  <a href="#">Dairy</a>
+                  <a href="#">Beef</a>
+                  <a href="#">Steak</a>
+                  <a href="#">Bacon</a>
+                  <a href="#">Sauce</a>
+                  <a href="#">Egg</a>
+                </div>
+                <div class="column">
+                  <h2>Dry Goods</h2>
+                  <a href="#">Nuts</a>
+                  <a href="#">Almonds</a>
+                  <a href="#">Mixed Nuts</a>
+                  <a href="#">Cashews</a>
+                  <a href="#">Walnuts</a>
+                  <a href="#">Raisins</a>
+                  <a href="#">Pistachios</a>
+                  <a href="#">Seeds</a>
+                </div>
+                <div class="column">
+                  <h2>Supplies</h2>
+                  <a href="#">Wheat</a>
+                  <a href="#">Oats</a>
+                  <a href="#">Corn</a>
+                  <a href="#">Rice</a>
+                  <a href="#">Sugar</a>
+                  <a href="#">Salt</a>
+                  <a href="#">Poha</a>
+                  <a href="#">Rava</a>
+                  <a href="#">Dal</a>
+                  <a href="#">Masala</a>
+                  <a href="#">Milk</a>
+                  <a href="#">Curd</a>
+                </div>
+                <div class="column">
+                  <h2>Bakery Items</h2>
+                  <a href="#">Chocolate</a>
+                  <a href="#">Breads</a>
+                  <a href="#">Rolls</a>
+                  <a href="#">Biscuits</a>
+                  <a href="#">Cookies</a>
+                  <a href="#">Cake</a>
+                  <a href="#">Waffle</a>
+                  <a href="#">Pie</a>
+                  <a href="#">Toast</a>
+                  <a href="#">Cupcake</a>
+                </div>
+                <div class="column">
+                  <h2>Frozen Goods</h2>
+                  <a href="#">Fries</a>
+                  <a href="#">Chapati</a>
+                  <a href="#">Paratha</a>
+                  <a href="#">Spring Roll</a>
+                  <a href="#">Pea</a>
+                  <a href="#">Corn</a>
+                  <a href="#">Momos</a>
+                  <a href="#">Icecream</a>
+                  <a href="#">Shrimp</a>
+                  <a href="#">Cheese</a>
+                  <a href="#">Chocolate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn" ></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="text" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </header>
+    <!-- main content -->
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>fresh and <span>organic</span> products for your</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam libero nostrum veniam facere tempore nisi.</p>
+            <a href="#categories" class="btn">shop now</a>
+        </div>
+
+    </section>
+    <!-- features menu -->
+    <section class="features" id="features">
+
+        <h1 class="heading"> our <span>features</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="https://previews.123rf.com/images/monticello/monticello1306/monticello130600170/20483481-fresh-organic-vegetables-in-wicker-basket-in-the-garden.jpg" alt="">
+                <h3>fresh and organic</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="https://www.nicepng.com/png/detail/114-1145508_free-home-delivery-png-graphic-free-delivery-boy.png" alt="">
+                <h3>free delivery</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="https://cdn1.iconfinder.com/data/icons/shopping-and-commerce-17/64/32-512.png" alt="">
+                <h3>easy payments</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- categories section starts  -->
+
+    <section class="categories" id="categories">
+
+        <h1 class="heading"> product <span>categories</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="https://www.foodbusinessnews.net/ext/resources/2019/5/SnackVariety_Lead.jpg?t=1558527976&width=1080" alt="">
+                <h3>Snacks</h3>
+                <p>upto 45% off</p>
+                <a href="Snacks.html" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="https://as2.ftcdn.net/v2/jpg/00/78/09/77/1000_F_78097722_DS0SKdmNCZLfefL1CP63kSbMzjjjv9Xy.jpg" alt="">
+                <h3>fresh fruits</h3>
+                <p>upto 45% off</p>
+                <a href="Fruits.html" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="https://cdn1.sph.harvard.edu/wp-content/uploads/sites/30/2012/09/vegetables-and-fruits-farmers-market.jpg" alt="">
+                <h3> Vegetables </h3>
+                <p>upto 45% off</p>
+                <a href="Vegetables.html" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcTx8qVcwhujVadwdOWhMD2vVXsylfoHGaRA&usqp=CAU" alt="">
+                <h3>Canned Items</h3>
+                <p>upto 45% off</p>
+                <a href="CannedItems.html" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="https://image.shutterstock.com/image-photo/set-natural-food-high-protein-260nw-1269525094.jpg" alt="">
+                <h3>Perishables</h3>
+                <p>upto 45% off</p>
+                <a href="Perishables.html" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="https://4.imimg.com/data4/YB/HG/ANDROID-46803775/product-500x500.jpeg" alt="">
+                <h3>Dry Goods</h3>
+                <p>upto 45% off</p>
+                <a href="DryGoods.html" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJTi11i7L-ZOiX0RhKGFKdcN8TwVQHz3tAYzIcoZO4wfYe8XrZ_xWFwmIG6BMybfxGjSU&usqp=CAU" alt="">
+                <h3>Supplies</h3>
+                <p>upto 45% off</p>
+                <a href="Supplies.html" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="https://thumbs.dreamstime.com/b/rich-bakery-9883921.jpg" alt="">
+                <h3>Bakery Items</h3>
+                <p>upto 45% off</p>
+                <a href="BakeryItems.html" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="https://res.cloudinary.com/purnesh/image/upload/f_auto/v1500452998/frozen-food-feed00.jpg" alt="">
+                <h3>Frozen Goods</h3>
+                <p>upto 45% off</p>
+                <a href="FrozenGoods.html" class="btn">shop now</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> E_COM GROCERY <i class="fas fa-shopping-basket"></i> </h3>
+                <p>Shop No. 3, Green Valley Hotel, Pune</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +91 7020343268 </a>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +91 8379831942 </a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> yashwamane30@gmail.com </a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Bhosari, Pune-411039 </a>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>

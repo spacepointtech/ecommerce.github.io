@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bakery Items</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <style media="screen">
+      button{
+        background-color: transparent;
+        height: 10px;
+        width: 10px;
+      }
+    </style>
+    <script type="text/javascript">
+      function searchTxt() {
+        var bitem =  new Array("Chocolate","Breads","Rolls", "Biscuits", "Cookies", "Cake", "Waffle","Pie","Toast","Cupcake");
+        val = document.forms[0].search.value;
+        if (bitem.includes(val))
+        {
+
+        }
+        else {
+          alert("Please select appropriate category");
+        }
+      }
+    </script>
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> groco </a>
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <form class="" action="index.html" method="post">
+          <input type="search" placeholder="Search.." name="search" onblur="searchTxt()">
+          <button type="button" name="button" class="fas fa-search"></button>
+        </form>
+      </nav>
+    </header>
+    <br><br><br><br><br><br>
+    <section class="categories" id="categories">
+      <div class="box-container">
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpF7tz7TLdH6riDQC3rLf7okMyoAu3q15wtPKbj1MBl-nhaSXEhnr44WpXUuOA4SO0BDc&usqp=CAU" alt="">
+            <h3>Chocolate</h3>
+            <p> &#8377; 20 rupees 1pc </p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvmAEnwRd8b9u7HJ4DpmUDlflZpxtzUcahGg&usqp=CAU" alt="">
+            <h3>Breads</h3>
+            <p>&#8377; 25 rupees packet</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://5.imimg.com/data5/GB/JL/MY-8962183/cream-roll-box-500x500.jpg" alt="">
+            <h3>Rolls</h3>
+            <p>&#8377; 30 rupees </p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://www.thenewsminute.com/sites/default/files/styles/slideshow_image_size/public/Britannia_sales.jpg?itok=yiHrBtLu" alt="">
+            <h3>Biscuits</h3>
+            <p>&#8377; 60 rs packet</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOatKE7Lsxk6Mx0wUJwkY0wL824wu4FTatiZSDl4a_BrMGyrwt7a4xFo33dNIeu3riWRk&usqp=CAU" alt="">
+            <h3>Cookies</h3>
+            <p>&#8377; 100 rupees </p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://media.istockphoto.com/photos/chocolate-cake-with-chocolate-fudge-drizzled-icing-and-chocolate-picture-id478348860?b=1&k=20&m=478348860&s=170667a&w=0&h=ClleMEXaQNUh01_-3-Q87ZhkjLZ1E6CKmcRJ2oxtRn8=" alt="">
+            <h3>Cake</h3>
+            <p>&#8377; 300 rupees 1kg</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://images.squarespace-cdn.com/content/v1/56cdf03037013b06ead1b45d/1540989024684-DE5MW31LT01AI1TTHUM7/IMG_7389.jpg?format=1000w" alt="">
+            <h3>Pie</h3>
+            <p>&#8377; 300 rupees 1kg</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://3.imimg.com/data3/QA/GR/IMOB-10607391/screenshot_2015-02-17-13-30-01_1-500x500.jpg" alt="">
+            <h3>Toast</h3>
+            <p>&#8377; 300 rupees 1kg</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

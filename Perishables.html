@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Perishables</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <style media="screen">
+      button{
+        background-color: transparent;
+        height: 10px;
+        width: 10px;
+      }
+    </style>
+    <script type="text/javascript">
+      function searchTxt() {
+        var perishable =  new Array("Meats","Poultry ","Fish ","Dairy","Beef","Steak","Bacon","Sauce","Egg");
+        val = document.forms[0].search.value
+        if (perishable.includes(val))
+        {
+
+        }
+        else {
+          alert("Please select appropriate category");
+        }
+      }
+    </script>
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> groco </a>
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <form class="" action="index.html" method="post">
+          <input type="search" placeholder="Search.." name="search" onblur="searchTxt()">
+          <button type="button" name="button" class="fas fa-search"></button>
+        </form>
+      </nav>
+    </header>
+    <br><br><br><br><br><br>
+    <section class="categories" id="categories">
+      <div class="box-container">
+        <div class="box">
+            <img src="https://media.istockphoto.com/photos/packaged-meat-with-clipping-path-picture-id172163727?k=20&m=172163727&s=612x612&w=0&h=jAZkDrn8h3leMxWhOZ-gwtMVjwOkmvl1KKeCz7IN_cQ=" alt="">
+            <h3>Meats</h3>
+            <p> &#8377; 1kg-750/- </p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://www.verywellhealth.com/thmb/djEUwjjop4w9005TFR3V4HPYcAI=/1920x1920/smart/filters:no_upscale()/uncover-hidden-egg-ingredients-1324275-primary-recirc-3cf777cca7044ee1992cc0a27d6449fa.jpg" alt="">
+            <h3>Egg</h3>
+            <p>&#8377; 197/-</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://media.istockphoto.com/vectors/vector-salmon-packaging-illustration-vector-id1050904454?k=20&m=1050904454&s=612x612&w=0&h=HohrqzizOYrTiFg-N0riifT3y6bRo8VIV1CemTR3Gvg=" alt="">
+            <h3>Fish</h3>
+            <p>&#8377; 140/-  1 pc</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://image.shutterstock.com/image-photo/ranipool-sikkim-india-october-03-260nw-1827344327.jpg" alt="">
+            <h3>Dairy</h3>
+            <p>Milk - 58 rs (1 ltr) Curd - 30 rs (300 ml)</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3TjuC3Qh45bB4Dav0V1r-6uXdytjvkaZ2ewlDpCdgBroGoR8q4Yn1G52u8b1Xua73uQk&usqp=CAU" alt="">
+            <h3>Beef </h3>
+            <p>&#8377; 30 - 40 rs</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/originals/22/f7/04/22f704095b5e33a84029095caec07148.jpg" alt="">
+            <h3>Steak </h3>
+            <p>&#8377; 30 - 40 rs</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://www.onnsteps.com/image/cache/catalog/demo/banners/kiss-500x500.jpg" alt="">
+            <h3>Sauce</h3>
+            <p>&#8377; 30 - 40 rs</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://5.imimg.com/data5/YG/TT/MY-19206036/amul-cheese-block-500x500.jpg" alt="">
+            <h3>Cheese </h3>
+            <p>&#8377; 30 - 40 rs</p>
+            <a href="snacks.html" class="btn">Add to Cart</a>
+        </div>
+      </div>
+
+    </section>
+
+  </body>
+</html>

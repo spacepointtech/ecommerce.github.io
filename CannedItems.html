@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Canned Items</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <style media="screen">
+      button{
+        background-color: transparent;
+        height: 10px;
+        width: 10px;
+      }
+    </style>
+    <script type="text/javascript">
+      function searchTxt() {
+        var canItems = new Array("Beans","Meat","Fish","Diced Tomatoes","Baby corn","Olives","Coconut Milk","Oranges","Pumkin","Jackfruit");
+        val = document.forms[0].search.value;
+        if(val != "")
+        {
+          if (canItems.includes(val))
+          {
+            val="";
+          }
+          else
+          {
+            alert("Please select appropriate category");
+          }
+        }
+        else {
+          val="";
+        }
+      }
+    </script>
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> groco </a>
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <form class="" action="index.html" method="post">
+          <input type="text" placeholder="Search.." name="search" onblur="searchTxt()">
+          <button type="button" name="button" class="fas fa-search"></button>
+        </form>
+      </nav>
+    </header>
+    <br><br><br><br><br><br>
+    <section class="categories" id="categories">
+      <div class="box-container">
+        <div class="box">
+            <img src="https://rukminim1.flixcart.com/image/416/416/jhql8cw0/canned-food/f/n/y/400-canned-chickpeas-400gm-beans-admor-original-imaf5zn7mgugzcde.jpeg?q=70" alt="">
+            <h3>Beans</h3>
+            <p> &#8377; 100/kg </p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbI4z09lDmUb-sxh34xO4LXHeMm-QUIfEixdVjE90_ujlSZ_KrrVM7cekMWTYltf83-BY&usqp=CAU" alt="">
+            <h3>Diced Tomatoes</h3>
+            <p>&#8377; 40/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://m.media-amazon.com/images/I/91PEvj7RA1L.jpg" alt="">
+            <h3>Meat</h3>
+            <p>&#8377; 120/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://rukminim1.flixcart.com/image/612/612/jxnksy80/canned-food/z/m/j/340-mackerel-in-oil-200g-and-pink-salmon-in-oil-140gm-sea-foods-original-imafg2h45gfz9zt7.jpeg?q=70" alt="">
+            <h3>Fish</h3>
+            <p>&#8377; 80/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://5.imimg.com/data5/MR/DA/MY-7580908/organic-coconut-milk-500x500.jpg" alt="">
+            <h3>Coconut Milk</h3>
+            <p>&#8377; 60/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKOr1_c8_AkQ7N82g6YZLp2RN5W8iKKJm0y9JojcnZUUCcZNWZIV7lkzjXdo0CFF_plzM&usqp=CAU" alt="">
+            <h3>Diced Green Chiles</h3>
+            <p>&#8377; 50</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://5.imimg.com/data5/EI/IW/MY-47937782/canned-baby-corn-500x500.jpg" alt="">
+            <h3>Baby corn</h3>
+            <p>&#8377; 120/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="https://m.media-amazon.com/images/I/816s0itJiRL._SX425_PIbundle-12,TopRight,0,0_AA425SH20_.jpg" alt="">
+            <h3>Mandarin oranges</h3>
+            <p>&#8377; 60/kg</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
